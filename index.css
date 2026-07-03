@@ -1,7 +1,8 @@
 .articlegrid{
+    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
+    justify-content: left;
+    gap: 2rem;
 }
 
 .productboxformat{
