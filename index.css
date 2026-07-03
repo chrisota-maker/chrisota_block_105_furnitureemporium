@@ -13,18 +13,51 @@
     box-shadow: 5px 5px 10px rgba(163, 162, 162, 0.3);
     margin: 0px;
     padding: 0px;
-    height: 350px;
-    width: 300px;
+    height: 360px;
+    width: 240px;
     overflow: hidden;
     background-color:#f5f3eb;
 }
 
+.productbox-section1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.productbox-section1 img {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:2;
+}
+
+.fade-out-image {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.productbox-section1:hover .fade-out-image {
+    opacity: 0;
+}
 
 .productbox-section2{
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     background-color: white;
+}
+
+p{
+    margin: 0px;
+    padding-left: 3px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(27, 27, 27);
 }
 
 h2{
@@ -39,12 +72,13 @@ h2{
     color: rgb(27, 27, 27);
 }
 
-p{
-    margin: 0px;
-    padding-left: 3px;
-    font-size:14px;
-    font-family:Arial, Helvetica, sans-serif;
-    color:rgb(27, 27, 27);
+.itemdesctitleformat{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .itemdescformat{
@@ -58,6 +92,7 @@ p{
 }
 
 .regularpriceformat{
+    font-size: 12px;
     color:rgb(90, 89, 89);
     margin-bottom:10px;
     letter-spacing: 1px;
@@ -65,7 +100,7 @@ p{
 
 
 button{
-    text-align:left;
+    text-align:center;
     font-size:14px;
     padding:9px;
     padding-left:3px;
@@ -74,4 +109,17 @@ button{
     border:0px;
     border-radius:0px;
     background-color:rgb(27, 27, 27);
+}
+
+button:hover{
+   background-color:#f5f3eb;transition: opacity 0.5s;
+   color: black;
+   font-weight: 400;
+}
+
+.secretmessage{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
 }
